@@ -33,4 +33,44 @@ Instead of collecting solutions, I focus on understanding why an algorithm works
      ┌─────────────────┐ ┌──────────────┐ ┌─────────────────┐ ┌───────────┐
      │  Binary Search  │ │  Prefix Sum  │ │ Monotonic Stack │ │   Graph   │
      └─────────────────┘ └──────────────┘ └─────────────────┘ └───────────┘
+     
+Problem
+   │
+   ▼
+Brute Force
+   │
+   ▼
+What's the bottleneck?
+   │
+   ├── Search Space?
+   │          │
+   │          ▼
+   │   Binary Search
+   │
+   ├── Repeated Range Sum?
+   │          │
+   │          ▼
+   │     Prefix Sum
+   │
+   ├── Monotonic Property?
+   │          │
+   │          ▼
+   │   Monotonic Stack
+   │
+   ├── Connectivity?
+   │          │
+   │          ▼
+   │        Graph
+     
+     
 ```
+
+This repository is organized according to the roadmap above.
+
+Each topic contains:
+
+• Why
+• Mental Model
+• Templates
+• Common-Mistakes
+• Practice
