@@ -7,15 +7,30 @@ Instead of collecting solutions, I focus on understanding why an algorithm works
 > I don't memorize solutions.
 > I build mental models.
 
-
-                Problems
-                   │
-        Can brute force solve it?
-                   │
-          Yes ─────────── No
-           │               │
-     Optimize Time     Find the Bottleneck
-                           │
-        ┌──────────┬──────────┬──────────┐
-        ▼          ▼          ▼          ▼
- Binary Search  Prefix Sum  Monotonic Stack  Graph
+```text
+                         ┌───────────────────┐
+                         │      Problem      │
+                         └─────────┬─────────┘
+                                   │
+                                   ▼
+                    ┌───────────────────────────┐
+                    │ Can brute force solve it? │
+                    └─────────────┬─────────────┘
+                                  │
+                    ┌─────────────┴─────────────┐
+                    │                           │
+                   Yes                          No
+                    │                           │
+                    ▼                           ▼
+          ┌──────────────────┐       ┌─────────────────────┐
+          │ Optimize the     │       │ Find the Bottleneck │
+          │ current solution │       └──────────┬──────────┘
+          └──────────────────┘                  │
+                                               ▼
+              ┌────────────────┬────────────────┬──────────────────┐
+              │                │                │                  │
+              ▼                ▼                ▼                  ▼
+     ┌─────────────────┐ ┌──────────────┐ ┌─────────────────┐ ┌───────────┐
+     │  Binary Search  │ │  Prefix Sum  │ │ Monotonic Stack │ │   Graph   │
+     └─────────────────┘ └──────────────┘ └─────────────────┘ └───────────┘
+```
